@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :posts
+
+  get 'welcome/login'
+
+  get 'welcome/forgot_password'
+
+  get 'welcome/aboutus'
+
   resources :tasks
 
   # The priority is based upon order of creation: first created -> highest priority.
