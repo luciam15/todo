@@ -8,7 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div class="row">
+<div class="9-small small-centered">
 <%= yield %>
+	
+</div>
+</div>
+
+
+
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
+

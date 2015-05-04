@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo</title>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'vendor/modernizr', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/header_feed'%>       
+      <div class="row">
+        <%= render 'layouts/sidebar_feed'%>
+        <div class="large-6 columns">
+          <%= yield %>
+        </div>       
+        <aside class="large-3 columns hide-for-small">
+          <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
+          <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
+        </aside>
+      </div>     
+<%= render 'layouts/footer_feed'%>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
+
