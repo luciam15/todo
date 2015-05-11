@@ -15,10 +15,7 @@
         <div class="large-6 columns">
           <%= yield %>
         </div>       
-        <aside class="large-3 columns hide-for-small">
-          <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
-          <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
-        </aside>
+        <%= render 'layouts/aside_feed'%>
       </div>     
 <%= render 'layouts/footer_feed'%>
 
